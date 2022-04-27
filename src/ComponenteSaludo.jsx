@@ -1,7 +1,16 @@
-import React from 'react';
+import React from 'react'
 
 export const ComponenteSaludo = (props) => {
-  return (
-    <div><h1>Saludando a {props.nombre}</h1></div>
+   console.log(props);
+    const {nombre, edad, civil} = props;
+  return(
+    <div>
+      <h1>Soy  {nombre}</h1>
+      <p> tengo {edad} años edad</p>
+      <p>
+        estado civil {civil}
+      </p>
+    </div>
   )
 }
+

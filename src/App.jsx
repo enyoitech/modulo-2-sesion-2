@@ -1,16 +1,37 @@
-import { useState } from 'react'
-import logo from './logo.svg'
+
 import { ComponenteSaludo } from './ComponenteSaludo'
-import './App.css'
 
 function App() {
-
+  const frutas =[ 'manzanas', 'peras', 'patilla' ]
+  const familiar = {nombre: 'sofia', edad: 55}
   return (
-    <div >
-      <ComponenteSaludo
-        nombre={'Pablo Aguilar Pinto'}
+    <>
+      <h1 >
+        hola mundo
+      </h1>
+      <ComponenteSaludo 
+        nombre={'Pepito'}
+        edad={25}
+        civil={true}
+        frutas={frutas}
+        familiar= {familiar}
+
       />
-    </div>
+      <ComponenteSaludo
+        nombre={'rosa'}
+        edad={40}
+        civil={false}
+
+      />
+      <ComponenteSaludo
+      nombre={'carla'}
+      edad={18}
+      civil={false}
+      
+
+      />
+    </>
+
   )
 }
 
